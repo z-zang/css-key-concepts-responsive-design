@@ -8,6 +8,33 @@
 
 body {
     background-color: var(--light);
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.cat-ipsum {
+    display: none;
+}
+
+h3,
+button {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -17,4 +44,65 @@ body {
 
 img {
     width: 250px;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 10px;
+    margin: 0px 5px;
+}
+
+@media only screen and (min-width: 700px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .cat-ipsum {
+        display: block;
+    }
+
+    h3,
+    button {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3,
+    button {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark);
+        color: var(--light);
+    }
 }
